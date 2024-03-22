@@ -1,8 +1,11 @@
+import Banner from "./Banner";
+import Table from "./Table";
 
 function Homepage() {
     return (
       <div>
-        <h1>Homepage to my app</h1>
+        <Banner />
+        <Table />
       </div>
     );
   }
