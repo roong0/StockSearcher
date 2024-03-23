@@ -29,7 +29,7 @@ export default function Header() {
                 <Select 
                   variant="outlined"
                   sx={{width:100, height:40, marginLeft:15,}}
-                  defaultValue={"AUD"}
+                  defaultValue={"USD"}
                   >
                   <MenuItem value={"AUD"}>$AUD</MenuItem>
                   <MenuItem value={"USD"}>$USD</MenuItem>

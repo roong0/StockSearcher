@@ -21,7 +21,7 @@ const Carousel = () => {
   useEffect(() => {
     fetchTrendingCoins();
   },);
-  // TODO: fix belo by making a type
+  // TODO: fix below by making a type
   const items = trending.map((stock:any) => {
         return (
             <Box sx={{
