@@ -1,4 +1,5 @@
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
+import Carousel from "./Carousel";
 // Use boxes rather than containers, was having problems with not taking up full size of div
 
 
@@ -42,7 +43,7 @@ function Banner() {
                     fontFamily: "Montserrat",
                 }}
             >Get the latest info regarding your ASX stocks</Typography>
-
+            <Carousel />
         </Box>
         </div>       
         
@@ -50,4 +51,7 @@ function Banner() {
   }
 
   export default Banner
-  //<img src={"./banner2.jpg"}/>
+
+  /*
+
+  */
