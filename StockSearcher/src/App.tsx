@@ -3,7 +3,7 @@ import './App.css'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from './components/Header';
 import Homepage from './components/Homepage';
-import Stockpage from './Stockpage';
+import Stockpage from './components/Stockpage';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/stocks" element={<Stockpage />} />
+          <Route path="/stock/:id" element={<Stockpage />} />
         </Routes>
         
       </div>
