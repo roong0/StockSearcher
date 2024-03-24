@@ -18,9 +18,11 @@ const Carousel = () => {
     setTrending(data.top_gainers.concat(data.top_losers));
   };
 
+  
   useEffect(() => {
     fetchTrendingCoins();
-  },);
+    console.log("useEffect called");
+  }, []); // Empty array here to stop it from constantly calling.
   // TODO: fix below by making a type
   const items = trending.map((stock:any) => {
         return (
@@ -62,13 +64,12 @@ const Carousel = () => {
       items: 2,
     },
     512: {
-      items: 4,
+      items: 6,
     },
   };
 
   return (
     <div >
-      <Box>
         <AliceCarousel
             mouseTracking
             infinite
@@ -79,10 +80,7 @@ const Carousel = () => {
             responsive={responsive}
             items={items}
             autoPlay
-            
-        />
-      </Box>
-      
+        />      
     </div>
   );
 };

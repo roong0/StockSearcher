@@ -44,6 +44,7 @@ function Banner() {
                 }}
             >Get the latest info regarding your ASX stocks</Typography>
             <Carousel />
+            
         </Box>
         </div>       
         

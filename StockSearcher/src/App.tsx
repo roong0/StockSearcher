@@ -21,3 +21,4 @@ function App() {
 }
 
 export default App
+//Add footer with note saying that limits to the free API may restrict functinoality (5calls/min & 500/day)
